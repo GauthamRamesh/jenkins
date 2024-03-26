@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="RegressionSuite"></include>
+		</run>
+	</groups>
+  <test thread-count="1" parallel="tests" name="Test" preserve-order="false">
+    <classes>
+      <class name="com.crm.practice.BasicTest">
+		  <methods>
+			  <include name="bookTicket"></include>
+		  </methods>
+      </class>
+      <class name="com.crm.practice.MidTest"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
